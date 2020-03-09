@@ -16,7 +16,7 @@ public class DetermineRoute implements Function<RequestObject, ResultObject> {
 	// Router Types
 	public static final String ERROR = "error";
 	public static final String OTHER = "other";
-	public static final String TS_DV_STAT = "tsDailyValueStatisitcalTransform";
+	public static final String TS_DV_STAT = "tsDailyValueStatisticalTransform";
 
 	@Autowired
 	public DetermineRoute(DataDao dataDao) {
