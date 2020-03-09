@@ -1,11 +1,11 @@
 package gov.usgs.wma.waterdata;
 
 public class ResultObject {
-	private String type;
-	public String getType() {
-		return type;
+	private String dataType;
+	public String getDataType() {
+		return dataType;
 	}
-	public void setType(String type) {
-		this.type = type;
+	public void setDataType(String dataType) {
+		this.dataType = dataType;
 	}
 }

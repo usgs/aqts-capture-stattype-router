@@ -38,7 +38,7 @@ public class DetermineRouteTest {
 		when(dataDao.getDataTypeRouting(anyString())).thenReturn(null);
 		ResultObject result = determineRoute.apply(request);
 		assertNotNull(result);
-		assertEquals(DetermineRoute.OTHER, result.getType());
+		assertEquals(DetermineRoute.OTHER, result.getDataType());
 	}
 
 	@Test
@@ -47,7 +47,7 @@ public class DetermineRouteTest {
 		when(dataDao.getDataTypeRouting(anyString())).thenReturn(data);
 		ResultObject result = determineRoute.apply(request);
 		assertNotNull(result);
-		assertEquals(DetermineRoute.OTHER, result.getType());
+		assertEquals(DetermineRoute.OTHER, result.getDataType());
 	}
 
 	@Test
@@ -56,6 +56,6 @@ public class DetermineRouteTest {
 		when(dataDao.getDataTypeRouting(anyString())).thenReturn(data);
 		ResultObject result = determineRoute.apply(request);
 		assertNotNull(result);
-		assertEquals(DetermineRoute.TS_DV_STAT, result.getType());
+		assertEquals(DetermineRoute.TS_DV_STAT, result.getDataType());
 	}
 }
