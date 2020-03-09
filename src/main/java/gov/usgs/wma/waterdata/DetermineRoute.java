@@ -30,7 +30,7 @@ public class DetermineRoute implements Function<RequestObject, ResultObject> {
 
 	protected ResultObject processRequest(RequestObject request) {
 		ResultObject result = new ResultObject();
-		result.setType(determineType(request.getUniqueId()));
+		result.setDataType(determineType(request.getUniqueId()));
 		return result;
 	}
 

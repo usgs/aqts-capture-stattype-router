@@ -54,7 +54,7 @@ public class DetermineRouteIT {
 		request.setUniqueId("abc");
 		ResultObject result = determineRoute.apply(request);
 		assertNotNull(result);
-		assertEquals(DetermineRoute.OTHER, result.getType());
+		assertEquals(DetermineRoute.OTHER, result.getDataType());
 	}
 
 	@Test
@@ -62,6 +62,6 @@ public class DetermineRouteIT {
 		request.setUniqueId("dEf");
 		ResultObject result = determineRoute.apply(request);
 		assertNotNull(result);
-		assertEquals(DetermineRoute.TS_DV_STAT, result.getType());
+		assertEquals(DetermineRoute.TS_DV_STAT, result.getDataType());
 	}
 }
