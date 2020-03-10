@@ -3,7 +3,7 @@
     "name": "Statistic Type Transformation Router",
     "organization": "U.S. Geological Survey",
     "description": "Time series Statistic Type Transformation Router for ETL from Aquarius Timeseries to WDFN",
-    "version": "0.0.${revision}",
+    "version": "0.1.${revision}",
     "status": "Development",
 
     "permissions": {
