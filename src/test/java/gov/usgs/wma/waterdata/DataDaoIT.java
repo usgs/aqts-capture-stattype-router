@@ -40,7 +40,7 @@ import com.github.springtestdbunit.annotation.DbUnitConfiguration;
 public class DataDaoIT {
 
 	@Autowired
-	DataDao dataDao;
+	private DataDao dataDao;
 
 	@Test
 	public void foundTest() {
