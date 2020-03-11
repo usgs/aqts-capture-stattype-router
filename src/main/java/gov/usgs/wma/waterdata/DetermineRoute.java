@@ -38,7 +38,7 @@ public class DetermineRoute implements Function<RequestObject, ResultObject> {
 		String type = ERROR;
 		Map<String, Object> data = dataDao.getDataTypeRouting(uniqueId);
 		LOG.debug("data: {}", data);
-		if (null != data) {
+		if (null != data && null != data.get(DataDao.DATA_TYPE)) {
 			switch (data.get(DataDao.DATA_TYPE).toString()) {
 			case TS_DV_STAT:
 				type = TS_DV_STAT;

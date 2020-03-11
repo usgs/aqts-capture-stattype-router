@@ -42,6 +42,14 @@ public class DetermineRouteTest {
 	}
 
 	@Test
+	public void npeTest() throws IOException {
+		when(dataDao.getDataTypeRouting(anyString())).thenReturn(data);
+		ResultObject result = determineRoute.apply(request);
+		assertNotNull(result);
+		assertEquals(DetermineRoute.OTHER, result.getDataType());
+	}
+
+	@Test
 	public void foundUnknownTest() throws IOException {
 		data.put(DataDao.DATA_TYPE, "value");
 		when(dataDao.getDataTypeRouting(anyString())).thenReturn(data);
