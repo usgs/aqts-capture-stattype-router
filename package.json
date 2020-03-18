@@ -1,0 +1,7 @@
+{
+  "name": "aqts-capture-stattype-router",
+  "description": "Deployment via serverless",
+  "dependencies": {
+    "serverless": "^1.66.0"
+  }
+}
