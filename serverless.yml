@@ -16,8 +16,10 @@ provider:
     "wma:environment": ${self:provider.stage}
     "wma:taggingVersion": ${opt:taggingVersion}
     "wma:costCenter": TBD
+    commitIdentifier: ${git:sha1}
 
 custom:
+  exportGitVariables: false
   accountNumber : ${ssm:/iow/aws/accountNumber}
   vpc:
     securityGroupIds: ${ssm:/iow/retriever-capture/${self:provider.stage}/securityGroupIds~split}
@@ -84,6 +86,8 @@ resources:
         EvaluationPeriods: 1
         AlarmActions:
           - Ref: snsTopic
+plugins:
+  - serverless-plugin-git-variables
 
 package:
   artifact: aqts-capture-stattype-router-aws.jar
