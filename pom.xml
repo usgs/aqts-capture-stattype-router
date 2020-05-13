@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>gov.usgs.wma.waterdata</groupId>
     <artifactId>aqts-capture-stattype-router</artifactId>
-    <version>0.1.${revision}</version>
+    <version>0.2.${revision}</version>
     <packaging>jar</packaging>
 
     <properties>
