@@ -1,0 +1,6 @@
+data_type_mapping_id,parm_cd,stat_cd,data_type
+1,62610,00001,tsDailyValueStatisticalTransform
+2,62610,00002,tsDailyValueStatisticalTransform
+3,62610,00003,tsDailyValueStatisticalTransform
+15,62611,00001,tsDailyValueStatisticalTransform
+169,61055,NULL,discreteGroundWaterTransform
