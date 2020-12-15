@@ -11,7 +11,9 @@ provider:
   deploymentBucket:
     name: iow-cloud-applications
   stackTags:
-    "wma:applicationId": "AQTS Time Series Stat Type Router"
+    "wma:project_id": "aqtscapture"
+    "wma:subSystem": "aqtscapture"
+    "wma:application_id": "AQTS Time Series Stat Type Router"
     "wma:contact": "Jim Kreft jkreft@usgs.gov"
     "wma:environment": ${self:provider.stage}
     "wma:taggingVersion": ${opt:taggingVersion}
